@@ -22,22 +22,23 @@ A simple example project using RabbitMQ and .Net Core 6 (console)
 ## What is RabbitMQ?
 
 RabbitMQ is an open source message broker software. It accepts messages from producers, and delivers them to consumers. It acts like a middleman which can be used to reduce loads and delivery times taken by web application servers.
+
 I recommend you visit the project [website](https://www.rabbitmq.com/) and even the [tutorials page](https://www.rabbitmq.com/getstarted.html).
 
 
 ## The project
 
 This project consists of three sub-projects, which are:
-- *RabbitMQNetCore*, a class project containing a class to type our message and also classes with the rules for sending and consuming the message.
-- *RabbitMQNetCore.Publisher*, a console project responsible for running the publisher.
-- *RabbitMQNetCore.Consumer*, a console project responsible for running the consumer.
+- **RabbitMQNetCore**, a class project containing a class to type our message and also classes with the rules for sending and consuming the message.
+- **RabbitMQNetCore.Publisher**, a console project responsible for running the publisher.
+- **RabbitMQNetCore.Consumer**, a console project responsible for running the consumer.
 
-I could have created a single project, yes I could, but I wanted to separate it for a better understanding of what each one does.
+Could I have created a single project, yes I could, but I wanted to separate it for a better understanding of what each one does.
 
 
 ## How to run?
 
-First we need to run the RabbitMQ service, I recommend that you make use of a Docker image, so you need to have docker installed and run the following command:
+First we need to run the RabbitMQ service, I recommend that you make use of a Docker image, so you need to have Docker installed and run the following command:
 
 ```bash
 docker run -d --hostname localhost --name localrabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password rabbitmq:3-management
