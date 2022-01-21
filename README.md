@@ -15,8 +15,8 @@
 
 ---
 
-# RabbitMQNetCore
-A simple example project using RabbitMQ and .Net Core 6 (console)
+# RabbitMQ and .Net Core
+A simple example project using RabbitMQ and .Net Core 6 (console).
 
 
 ## What is RabbitMQ?
@@ -29,9 +29,9 @@ I recommend you visit the project [website](https://www.rabbitmq.com/) and even 
 ## The project
 
 This project consists of three sub-projects, which are:
-- **RabbitMQNetCore**, a class project containing a class to type our message and also classes with the rules for sending and consuming the message.
-- **RabbitMQNetCore.Publisher**, a console project responsible for running the publisher.
-- **RabbitMQNetCore.Consumer**, a console project responsible for running the consumer.
+- **RabbitMQNetCore**: a class project containing a class to type our message and also classes with the rules for sending and consuming the message.
+- **RabbitMQNetCore.Publisher**: a console project responsible for running the publisher.
+- **RabbitMQNetCore.Consumer**: a console project responsible for running the consumer.
 
 Could I have created a single project, yes I could, but I wanted to separate it for a better understanding of what each one does.
 
