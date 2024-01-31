@@ -16,7 +16,7 @@
 ---
 
 # RabbitMQ and .Net Core
-A simple example project using RabbitMQ and .Net Core 6 (console).
+A project example using RabbitMQ and .Net Core 6 (console).
 
 
 ## What is RabbitMQ?
